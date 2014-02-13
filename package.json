@@ -1,0 +1,22 @@
+{
+  "name": "lockredis",
+  "version": "0.0.1",
+  "description": "Simple locking utility on top of Redis",
+  "main": "index.js",
+  "keywords": [
+    "redis",
+    "lock",
+    "semaphore",
+    "mutex",
+    "synchronization"
+  ],
+  "author": "Ekin Koc",
+  "license": "MIT",
+  "dependencies": {
+    "redis": "~0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eknkc/lockredis.git"
+  }
+}
