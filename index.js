@@ -2,7 +2,7 @@ var redis = require("redis");
 var crypto = require("crypto");
 var fs = require("fs");
 
-var releaseLua = fs.readFileSync('./release.lua');
+var releaseLua = fs.readFileSync(path.join(__dirname, './release.lua'));
 
 module.exports = function (client) {
   client = client || redis.createClient();
