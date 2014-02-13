@@ -1,6 +1,6 @@
 {
   "name": "lockredis",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple locking utility on top of Redis",
   "main": "index.js",
   "keywords": [

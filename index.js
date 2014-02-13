@@ -1,6 +1,7 @@
 var redis = require("redis");
 var crypto = require("crypto");
 var fs = require("fs");
+var path = require("path");
 
 var releaseLua = fs.readFileSync(path.join(__dirname, './release.lua'));
 
