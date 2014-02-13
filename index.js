@@ -39,18 +39,3 @@ module.exports = function (client) {
     });
   }
 }
-
-module.exports()('deneme', function (err, done) {
-  console.log('acq', Date.now());
-  setTimeout(done, 2500)
-})
-
-module.exports()('deneme', function (err, done) {
-  console.log('acq', Date.now());
-  setTimeout(done, 2500)
-})
-
-module.exports()('deneme', function (err, done) {
-  console.log('acq', Date.now());
-  setTimeout(done, 2500)
-})
