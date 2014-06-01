@@ -1,4 +1,3 @@
-var redis = require("redis");
 var crypto = require("crypto");
 var fs = require("fs");
 var path = require("path");
@@ -6,7 +5,14 @@ var path = require("path");
 var releaseLua = fs.readFileSync(path.join(__dirname, './release.lua'));
 
 module.exports = function (client) {
-  client = client || redis.createClient();
+  if (!client || !client.set) {
+    try {
+      var redis = require("redis");
+      client = redis.createClient();
+    } catch(e) {
+      throw new Error("Provide a redis client instance to lockredis constructor.")
+    }
+  }
 
   return function acquire(name, options, next) {
     if (typeof options == 'function') {

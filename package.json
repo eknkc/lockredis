@@ -1,6 +1,6 @@
 {
   "name": "lockredis",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Simple locking utility on top of Redis",
   "main": "index.js",
   "keywords": [
@@ -12,9 +12,7 @@
   ],
   "author": "Ekin Koc",
   "license": "MIT",
-  "dependencies": {
-    "redis": "~0.10.0"
-  },
+  "dependencies": { },
   "repository": {
     "type": "git",
     "url": "git://github.com/eknkc/lockredis.git"
